@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+
+body {
+ background-image: url(Services_2.png);
+ background-attachment: fixed;
+ background-repeat: no-repeat;
+ background-size: cover;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  color: #f2f2f2;
+  box-sizing: border-box;
+  font-family: 'Poppins Bold', sans-serif;
+}
+nav{
+  background: #ea5833;
+  padding: 10px 40px 10px 70px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-left: none;
+  border-right: none;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+nav ul .h1.logo2{
+  flex: 1;
+  font-size: 30px;
+  position: left;
+  font-weight: 700;
+
+}
+
+nav ul li.logo{
+  flex: 1;
+  font-size: 30px;
+  position: left;
+  font-weight: 700;
+}
+
+nav ul .items{
+  padding: 0 25px;
+  display: inline-flex;
+}
+nav ul div.items a{
+  text-decoration: none;
+  font-size: 18px;
+  padding: 0 12px;
+}
+nav ul div.items a:hover{
+  color:#ffffff;
+  background-color: #277bc0;
+  border-radius:20px;
+}
+nav ul .search-icon{
+  height: 40px;
+  width: 240px;
+  display: flex;
+  background: #ffffff;
+  border-radius: 50px;
+}
+nav ul .search-icon input{
+  height: 100%;
+  width: 200px;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  color: #000;
+  font-size: 16px;
+  border-radius: 50px;
+}
+nav ul .search-icon .icon{
+  height: 100%;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #cccccc;
+  border-radius: 50px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+nav ul .search-icon .icon:hover{
+  background: #e6e6e6;
+}
+nav ul .search-icon .icon span{
+  color: #ffb200;
+  font-size: 18px;
+}
+nav ul li.btn{
+  font-size: 29px;
+  flex: 1;
+  padding: 0 40px;
+  display: none;
+}
+nav ul li.btn span{
+  height: 42px;
+  width: 42px;
+  text-align: center;
+  line-height: 42px;
+  border: 1px solid #151515;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.footer{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 60px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: #277bc0;
+    
+ 
+}
+
+nav ul li.btn span.show:before{
+  content: '\f00d';
+}
+@media screen and (max-width: 1052px) {
+  nav{
+    padding: 10px 40px 10px 0px;
+  }
+  nav ul li.logo{
+    display: none;
+  }
+  nav ul div.items{
+    flex: 4;
+  }
+}
+@media screen and (max-width: 800px){
+  nav ul li.btn{
+    display: block;
+  }
+  nav{
+    z-index: 1;
+    padding: 9px 40px 9px 0;
+  }
+  nav ul div.items{
+    z-index: -1;
+    position: fixed;
+    top: -220px;
+    right: 0;
+    width: 100%;
+    background-color: #222222;
+    display: inline-block;
+    transition: top .4s;
+  }
+  nav ul div.items.show{
+    top: 60px;
+  }
+  nav ul div.items li{
+    text-align: center;
+    line-height: 30px;
+    margin: 30px 0;
+  }
+  nav ul div.items li a{
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 405px) {
+  nav ul{
+    flex-wrap: nowrap;
+  }
+  nav ul li.search{
+    width: 50vmin;
+  }
+  nav ul li input{
+    width: 40vmin;
+    border: none;
+
+    border-radius: 50px;
+    padding: 5px;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+  }
+  nav ul li .search-icon{
+    width: 10vmin;
+  }
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #000000;
+  padding: 20px 80px;
+}
+
+.container:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: #000000;
+  background: url('Service.png') repeat center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.service {
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  background-color: #fff;
+  box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+}
+
+#toyname {
+  max-width: 750px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  background-color: rgba(230, 230, 230, 0.6);
+  border: none;
+}
+
+#toys {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  max-width: 550px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(230, 230, 230, 0);
+  border: none;
+  font-size: medium;
+  color: #7B7B86;
+}
+
+.textcolor {
+  color: #000;
+}
+
+#labelselect {
+  padding-right: 10px;
+} 
+
+#label {
+  color: #7B7B86;
+  font-size: large;
+}
+
+#selecttoy {
+  padding-left: 1px;
+}
+
+#h3 {
+  font-family: sans-serif;
+}
+
+.left {
+  width: 100%;
+  height: 100%;
+  background: url('Serviceformbg.png') no-repeat center;
+  background-size: cover;
+}
+
+.right {
+  padding: 25px 40px;
+}
+
+h2 {
+  position: relative;
+  color: #000000;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+h2:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  color: #000000;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 70px;
+  border-radius: 2px;
+  background-color: #FFB200; /*line under the customer service word*/
+}
+
+.field {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  outline: none;
+  color: #000;
+  border: 2px solid rgba(0, 0, 0, 0);
+  background-color: rgba(230, 230, 230, 0.6);
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: .3s;
+}
+
+.field:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.field:focus {
+  background-color: #fff;
+  border: 2px solid rgba(30, 85, 250, 0.47);
+}
+
+.area {
+  min-height: 150px;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  background-color: #FFB200;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: #fff;
+  transition: .3s;
+}
+
+.btn:hover {
+  background-color: #ffb300b6;
+}
+
+.message .success{
+  font-size: 20px;
+  color: #38E54D;
+  position: center;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: small;
+  animation: buttons 60.0s linear;
+  display: none;
+  background-color: none;
+}
+.message .danger{
+  font-size: 20px;
+  color: #E14D2A;
+  position: center;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: small;
+  transition: .7s;
+  animation: buttons .3s linear;
+  display: none;
+  background-color: none;
+}
+
+@media screen and (max-width:880px) {
+  .service {
+      grid-template-columns: 1fr;
+  }
+
+  .left {
+      height: 200px;
+  }
+}

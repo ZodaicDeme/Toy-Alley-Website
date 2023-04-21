@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+
+body {
+ background-image: url(About_2.png);
+ background-attachment: fixed;
+ background-repeat: no-repeat;
+ background-size: cover;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  color: #f2f2f2;
+  box-sizing: border-box;
+  font-family: 'Poppins Bold', sans-serif;
+
+}
+nav{
+  background: #ea5833;
+  padding: 10px 40px 10px 70px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-left: none;
+  border-right: none;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+nav ul .h1.logo2{
+  flex: 1;
+  font-size: 30px;
+  position: left;
+  font-weight: 700;
+
+}
+
+nav ul li.logo{
+  flex: 1;
+  font-size: 30px;
+  position: left;
+  font-weight: 700;
+}
+
+nav ul .items{
+  padding: 0 25px;
+  display: inline-flex;
+}
+nav ul div.items a{
+  text-decoration: none;
+  font-size: 21px;
+  padding: 0 12px;
+}
+nav ul div.items a:hover{
+  color:#ffffff;
+  background-color: #277bc0;
+  border-radius:20px;
+}
+nav ul li.btn{
+  font-size: 29px;
+  flex: 1;
+  padding: 0 40px;
+  display: none;
+}
+nav ul li.btn span{
+  height: 42px;
+  width: 42px;
+  text-align: center;
+  line-height: 42px;
+  border: 1px solid #15151500;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.footer{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 112px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: #277bc0;
+}
+
+.text{
+  width: 75vw;
+  border: 15px solid #e2ceb8;
+  padding: 90px;
+  margin: 100px;
+  border-radius: 10vh;
+  background-color: #ffffff;
+  box-shadow: #000;
+  color: #000;
+}
